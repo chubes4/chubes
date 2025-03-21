@@ -1,5 +1,7 @@
-/* Container for the Form */
-.seo-audit-form {
+/* contact.css */
+
+/* Container for the Contact Form */
+.contact-form {
     background: rgba(34, 34, 34, 0.95);
     border: 2px solid rgba(0, 194, 255, 0.6);
     border-radius: 8px;
@@ -11,13 +13,14 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.seo-audit-form:hover {
+.contact-form:hover {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 194, 255, 0.2);
     transform: translateY(-2px);
 }
 
 /* Form Headings */
-.seo-audit-form h2 {
+.contact-form h1,
+.contact-form h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
@@ -25,7 +28,7 @@
 }
 
 /* Form Labels */
-.seo-audit-form label {
+.contact-form label {
     display: block;
     font-weight: 600;
     margin: 15px 0 5px;
@@ -33,10 +36,9 @@
 }
 
 /* Input Fields */
-.seo-audit-form input[type="text"],
-.seo-audit-form input[type="email"],
-.seo-audit-form input[type="url"],
-.seo-audit-form textarea {
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid rgba(0, 194, 255, 0.4);
@@ -48,23 +50,22 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.seo-audit-form input[type="text"]:focus,
-.seo-audit-form input[type="email"]:focus,
-.seo-audit-form input[type="url"]:focus,
-.seo-audit-form textarea:focus {
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
     border-color: #00e0ff;
     outline: none;
     box-shadow: 0 0 8px rgba(0, 224, 255, 0.2);
 }
 
 /* Textarea Resizing */
-.seo-audit-form textarea {
+.contact-form textarea {
     resize: vertical;
     min-height: 100px;
 }
 
 /* Submit Button */
-.seo-audit-form button[type="submit"] {
+.contact-form button[type="submit"] {
     display: inline-block;
     background: #00c2ff;
     color: #000;
@@ -79,7 +80,7 @@
     box-shadow: 0 4px 12px rgba(0, 194, 255, 0.2);
 }
 
-.seo-audit-form button[type="submit"]:hover {
+.contact-form button[type="submit"]:hover {
     background: #009dc0;
     color: #fff;
     transform: translateY(-2px);
@@ -87,28 +88,21 @@
 }
 
 /* Error and Success Messages */
-.seo-audit-form .seo-error {
-    color: #ff4f4f;
+.contact-form .contact-error,
+.contact-form .contact-success {
     text-align: center;
     margin-top: 10px;
     display: none;
 }
 
-.seo-audit-form .success-message {
-    color: #00e0ff;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
+.contact-form .contact-error {
+    color: #ff4f4f;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .seo-audit-form {
-        padding: 20px;
-    }
+.contact-form .contact-success {
+    color: #00e0ff;
+}
 
-    .seo-audit-form button[type="submit"] {
-        width: 100%;
-        box-sizing: border-box;
-    }
+.post-body{
+    text-align: center;
 }
