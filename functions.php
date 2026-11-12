@@ -22,6 +22,7 @@ function chubes_theme_setup() {
     add_editor_style('style.css');
     add_editor_style('assets/css/root.css');
 
+    add_theme_support('docsync-templates');
 
     // Register navigation menu location
     register_nav_menus(array(
